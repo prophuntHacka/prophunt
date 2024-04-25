@@ -17,3 +17,17 @@ function closePopUp(){
         currentPopup = undefined;
     }
 }
+
+for (let i = 1; i <= 5; i++) {
+    WA.ui.actionBar.addButton({
+        id: 'transform-btn-' + i,
+        type: 'action',
+        imageSrc: '<Your image url>',
+        toolTip: 'Transform',
+        callback: (event) => {
+            console.log('Button ' + i + ' clicked', event);
+            // Quand un utilisateur clique sur le bouton 'Transform', nous le supprimons.
+            WA.ui.actionBar.removeButton('transform-btn-' + i);
+        }
+    });
+}
