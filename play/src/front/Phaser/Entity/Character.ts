@@ -595,9 +595,11 @@ export abstract class Character extends Container implements OutlineableInterfac
 
     public hideName(): void {
         this.playerNameText?.setVisible(false);
+        this.statusDot.visible = false;
     }
 
     public showName(): void {
         this.playerNameText?.setVisible(true);
+        this.statusDot.visible = true;
     }
 }

@@ -2417,13 +2417,13 @@ ${escapedMessage}
         );
 
         this.iframeSubscriptionList.push(
-            iframeListener.hideName.subscribe(() => {
+            iframeListener.hideNameAndStatus.subscribe(() => {
                 this.CurrentPlayer.hideName();
             })
         );
 
         this.iframeSubscriptionList.push(
-            iframeListener.restoreName.subscribe(() => {
+            iframeListener.restoreNameAndStatus.subscribe(() => {
                 this.CurrentPlayer.showName();
             })
         );

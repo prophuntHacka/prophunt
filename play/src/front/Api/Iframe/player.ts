@@ -299,9 +299,9 @@ export class WorkadventurePlayerCommands extends IframeApiContribution<Workadven
         });
     }
 
-    public hideName(): Promise<void> {
+    public hideNameAndStatus(): Promise<void> {
         return queryWorkadventure({
-            type: "hideName",
+            type: "hideNameAndStatus",
             data: undefined,
         });
     }
